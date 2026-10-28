@@ -1,0 +1,78 @@
+{
+  "skill": "plan-build",
+  "test_cases": [
+    {
+      "name": "vague_self_idea",
+      "input": "I want an app for tracking my plants.",
+      "assertions": [
+        "Does not emit a ready-to-paste brief",
+        "Asks who it is for and what goes wrong today",
+        "Asks for the primary action and an observable success signal",
+        "Asks what we are deliberately not doing"
+      ]
+    },
+    {
+      "name": "client_solution_request",
+      "input": "Client wants a dashboard with AI insights.",
+      "assertions": [
+        "Does not treat the dashboard as the requirement",
+        "Asks what decision or job the request supports",
+        "Asks what insight means in observable terms",
+        "Keeps the user need separate from the proposed solution"
+      ]
+    },
+    {
+      "name": "long_prd_dump",
+      "input": "Here is the full PRD. It covers search, checkout, reviews, seller tools, notifications, and billing. Turn it into the build brief.",
+      "assertions": [
+        "Names the slices in the PRD",
+        "Asks which slice to focus on",
+        "Does not import unrelated sections into scope"
+      ]
+    },
+    {
+      "name": "missing_non_goals",
+      "input": "Shoppers abandon checkout because shipping cost appears on the last step. The primary user is the shopper. The PM approves it. We should show the shipping cost on the cart. Success is the shopper seeing the cost before payment. Write the brief.",
+      "assertions": [
+        "Asks what we are deliberately not doing before the final brief",
+        "Does not invent exclusions"
+      ]
+    },
+    {
+      "name": "ambiguous_quality_words",
+      "input": "Make onboarding seamless and intuitive.",
+      "assertions": [
+        "Does not copy seamless or intuitive into a requirement",
+        "Asks for a concrete success and failure",
+        "Uses an observable acceptance criterion only after the user answers"
+      ]
+    },
+    {
+      "name": "usability_validation_prototype",
+      "input": "I want a prototype to test whether the new navigation is understandable.",
+      "assertions": [
+        "Includes a prototype question and a task",
+        "Asks for or records success and failure signals",
+        "Includes relevant usability checks without designing the screens"
+      ]
+    },
+    {
+      "name": "ai_agent_handoff",
+      "input": "Build this with Cursor.",
+      "assertions": [
+        "Does not write implementation code",
+        "After confirmation, the brief has an ordered build sequence",
+        "Includes acceptance criteria, accepted edge cases, and explicit unknowns"
+      ]
+    },
+    {
+      "name": "premature_brief_request",
+      "input": "Just write the brief now. I want something for saving favorite searches.",
+      "assertions": [
+        "Does not emit a Ready-to-paste brief on that request alone",
+        "Either asks the minimum missing questions or produces a draft labeled unconfirmed",
+        "Labels unknowns as assumptions or open questions and does not present them as confirmed"
+      ]
+    }
+  ]
+}

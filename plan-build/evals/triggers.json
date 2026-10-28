@@ -1,0 +1,13 @@
+{
+  "skill": "plan-build",
+  "test_cases": [
+    {"input": "Help me clarify this feature idea before I start building", "should_trigger": true},
+    {"input": "I want an app for tracking my plants.", "should_trigger": true},
+    {"input": "Client wants a dashboard with AI insights. Help me scope it before we prototype.", "should_trigger": true},
+    {"input": "Just write the brief for this feature.", "should_trigger": true},
+    {"input": "Build this with Cursor. I need a brief before anyone writes code.", "should_trigger": true},
+    {"input": "Make onboarding seamless and intuitive — help me write the spec first.", "should_trigger": true},
+    {"input": "How do I implement the login page in React?", "should_trigger": false},
+    {"input": "Generate a clickable prototype of the dashboard.", "should_trigger": false}
+  ]
+}
